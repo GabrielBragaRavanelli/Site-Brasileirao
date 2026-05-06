@@ -11,10 +11,16 @@ body{
     box-sizing: border-box;
 }
 
-header{
-    background-color: black;
+
+img{
+   
 }
 
-header p{
-    color: white;
+header{
+    background-color: black;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
