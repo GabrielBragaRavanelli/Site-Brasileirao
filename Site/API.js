@@ -1,4 +1,4 @@
-// Chave da API carregada de .env (não commitar .env)
+
 const API_KEY = '0fb375265f9f6cdb24fe6d1a5dd0fdda';
 const API_URL = 'https://v3.football.api-sports.io/fixtures';
 
