@@ -16,15 +16,20 @@ body{
 }
 
 
-img{
-    width: 4%;
-    margin-left: 25rem;
+header > img {
+    width: 120px;
+    margin-left: 2rem;
+}
+
+footer .img-ge {
+    width: 120px;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 header{
-    
     background-color: rgb(9, 255, 0);
-    padding: 5px 0;
+    padding: 12px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +53,79 @@ nav ul{
 
 .menu a:hover{
     color: rgb(109, 103, 103);
+}
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-jogo {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+    min-height: 160px;
+    overflow: hidden;
+}
+
+.card-jogo:hover {
+    transform: translateY(-5px);
+}
+
+.confronto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.time {
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.time img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.time span {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.placar {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0 10px;
+    color: #333;
+}
+
+.status-jogo {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: #666;
+    background: #e0e0e0;
+    padding: 3px 8px;
+    border-radius: 15px;
 }
 
 footer{
@@ -97,9 +175,7 @@ footer{
    padding: 0.75rem;
 }
 
-img{
- margin-top: 20px;
-}
+/* Footer logo spacing is handled above */
 
 .links-footer a{
     transition: 0.3s;
