@@ -1,10 +1,10 @@
 
-const API_KEY = '0fb375265f9f6cdb24fe6d1a5dd0fdda';
+const API_KEY = '03cce5cd34b218d306f0f7280189b2e9';
 const API_URL = 'https://v3.football.api-sports.io/fixtures';
 
 async function fetchJogos() {
     try {
-        const response = await fetch(`${API_URL}?league=71&season=2023`, {
+        const response = await fetch(`${API_URL}?league=71&season=2024`, {
             method: 'GET',
             headers: {
                 'x-apisports-key': API_KEY
