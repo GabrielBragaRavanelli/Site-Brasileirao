@@ -142,11 +142,6 @@ footer{
    
 }
 
-.paragrafo{
-   margin-left: 8rem;
-   padding: 0.75rem;
-}
-
 .links-footer{
   display: flex;
   flex-direction: column;
@@ -171,6 +166,11 @@ footer{
 }
 
 .paragrafo{
+   margin-left: 8rem;
+   padding: 0.75rem;
+}
+
+.paragrafo{
    margin-left: 29rem;
    padding: 0.75rem;
 }
@@ -183,4 +183,179 @@ footer{
 
 .links-footer a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        gap: 3rem;
+        margin-right: 5rem;
+    }
+
+    .container-footer {
+        margin-left: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .links-footer {
+        top: 0;
+        right: 0;
+    }
+
+    .paragrafo {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header > img {
+        width: 80px;
+        margin-left: 1rem;
+    }
+
+    .menu {
+        gap: 1rem;
+        margin-right: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 0.95rem;
+    }
+
+    .jogos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .card-jogo {
+        padding: 12px;
+        min-height: 140px;
+    }
+
+    .time img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .time span {
+        font-size: 0.7rem;
+    }
+
+    .placar {
+        font-size: 1.2rem;
+    }
+
+    footer .img-ge {
+        width: 80px;
+        margin-left: 1rem;
+    }
+
+    .container-footer {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .links-footer {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .links-footer .link {
+        font-size: 0.9rem;
+    }
+
+    .paragrafo {
+        margin-left: 0;
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    nav.cabecalho {
+        width: 100%;
+    }
+
+    .menu {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header > img {
+        width: 60px;
+        margin-left: 0.5rem;
+    }
+
+    .menu {
+        gap: 0.8rem;
+        margin-right: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .menu a {
+        font-size: 0.8rem;
+    }
+
+    .jogos-grid {
+        grid-template-columns: 1fr;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .card-jogo {
+        padding: 10px;
+        min-height: 130px;
+    }
+
+    .confronto {
+        gap: 5px;
+    }
+
+    .time img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .time span {
+        font-size: 0.65rem;
+    }
+
+    .placar {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+
+    .status-jogo {
+        font-size: 0.6rem;
+        padding: 2px 6px;
+    }
+
+    footer .img-ge {
+        width: 60px;
+        margin-left: 0.5rem;
+    }
+
+    .links-footer {
+        gap: 0.25rem;
+    }
+
+    .links-footer .link {
+        font-size: 0.8rem;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
 }
